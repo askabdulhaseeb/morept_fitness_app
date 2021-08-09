@@ -1,0 +1,9 @@
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+    sort_pub_dependencies: false
+    # Util classes are awesome!
+    avoid_classes_with_only_static_members: true
+    sort_constructors_first: true
+    always_specify_types: true
