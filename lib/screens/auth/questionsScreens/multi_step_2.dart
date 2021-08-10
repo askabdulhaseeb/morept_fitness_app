@@ -27,33 +27,43 @@ class MultiStep2 extends StatelessWidget {
             LightBlackBackgroundContainer(
               child: Column(
                 children: <Widget>[
+                  for ( var data in question ) 
                   CustomRadioButton(
-                    value: question[0].id,
-                    groupValue: provider.q2,
+                    value: data.id,
+                    groupValue: provider.q3,
                     onChange: (String? value) {
-                      provider.onChangeQ2(value);
+                      provider.onChangeQ4(value);
                       Navigator.of(context).pushNamed(MultiStep3.routeName);
                     },
-                    title: question[0].title,
+                    title: data.title,
                   ),
-                  CustomRadioButton(
-                    value: question[1].id,
-                    groupValue: provider.q2,
-                    onChange: (String? value) {
-                      provider.onChangeQ2(value);
-                      Navigator.of(context).pushNamed(MultiStep3.routeName);
-                    },
-                    title: question[1].title,
-                  ),
-                  CustomRadioButton(
-                    value: question[2].id,
-                    groupValue: provider.q2,
-                    onChange: (String? value) {
-                      provider.onChangeQ2(value);
-                      Navigator.of(context).pushNamed(MultiStep3.routeName);
-                    },
-                    title: question[2].title,
-                  ),
+                  // CustomRadioButton(
+                  //   value: question[0].id,
+                  //   groupValue: provider.q2,
+                  //   onChange: (String? value) {
+                  //     provider.onChangeQ2(value);
+                  //     Navigator.of(context).pushNamed(MultiStep3.routeName);
+                  //   },
+                  //   title: question[0].title,
+                  // ),
+                  // CustomRadioButton(
+                  //   value: question[1].id,
+                  //   groupValue: provider.q2,
+                  //   onChange: (String? value) {
+                  //     provider.onChangeQ2(value);
+                  //     Navigator.of(context).pushNamed(MultiStep3.routeName);
+                  //   },
+                  //   title: question[1].title,
+                  // ),
+                  // CustomRadioButton(
+                  //   value: question[2].id,
+                  //   groupValue: provider.q2,
+                  //   onChange: (String? value) {
+                  //     provider.onChangeQ2(value);
+                  //     Navigator.of(context).pushNamed(MultiStep3.routeName);
+                  //   },
+                  //   title: question[2].title,
+                  // ),
                 ],
               ),
             ),

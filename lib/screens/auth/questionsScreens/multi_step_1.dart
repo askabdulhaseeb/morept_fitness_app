@@ -27,32 +27,15 @@ class MultiStep1 extends StatelessWidget {
             LightBlackBackgroundContainer(
               child: Column(
                 children: <Widget>[
+                   for ( var data in question ) 
                   CustomRadioButton(
-                    value: question[0].id,
-                    groupValue: provider.q1,
+                    value: data.id,
+                    groupValue: provider.q3,
                     onChange: (String? value) {
-                      provider.onChangeQ1(value);
+                      provider.onChangeQ4(value);
                       Navigator.of(context).pushNamed(MultiStep2.routeName);
                     },
-                    title: question[0].title,
-                  ),
-                  CustomRadioButton(
-                    value: question[1].id,
-                    groupValue: provider.q1,
-                    onChange: (String? value) {
-                      provider.onChangeQ1(value);
-                      Navigator.of(context).pushNamed(MultiStep2.routeName);
-                    },
-                    title: question[1].title,
-                  ),
-                  CustomRadioButton(
-                    value: question[2].id,
-                    groupValue: provider.q1,
-                    onChange: (String? value) {
-                      provider.onChangeQ1(value);
-                      Navigator.of(context).pushNamed(MultiStep2.routeName);
-                    },
-                    title: question[2].title,
+                    title: data.title,
                   ),
                 ],
               ),
