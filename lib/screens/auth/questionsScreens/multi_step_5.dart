@@ -3,6 +3,7 @@ import 'package:morept_fitness_app/models/questions.dart';
 import 'package:morept_fitness_app/providers/questions_providers.dart';
 import 'package:morept_fitness_app/screens/auth/questionsScreens/multi_step_6.dart';
 import 'package:morept_fitness_app/screens/widgets/back_to_previous_page.dart';
+import 'package:morept_fitness_app/screens/widgets/custom_progress_line.dart';
 import 'package:morept_fitness_app/screens/widgets/custom_radio_button.dart';
 import 'package:morept_fitness_app/screens/widgets/header_text_for_questions.dart';
 import 'package:morept_fitness_app/screens/widgets/light_black_bg.dart';
@@ -23,23 +24,24 @@ class MultiStep5 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const BackToPreviousPageWidget(),
+             const CustomProgressLine(pageNumber: 5, totalPages: 7),
             HeaderTextForQuestions(title: provider.getQuestion5Title()),
             LightBlackBackgroundContainer(
               child: Column(
                 children: <Widget>[
-                  for (var data in question)
+                  for (Questions data in question)
                     CustomRadioButton(
                       value: data.id,
-                      groupValue: provider.q3,
+                      groupValue: provider.q5,
                       onChange: (String? value) {
-                        provider.onChangeQ4(value);
+                        provider.onChangeQ5(value);
                         Navigator.of(context).pushNamed(MultiStep6.routeName);
                       },
                       title: data.title,
                     ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

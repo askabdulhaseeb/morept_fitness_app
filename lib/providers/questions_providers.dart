@@ -34,56 +34,45 @@ class QuestionsProvider extends ChangeNotifier {
   List<Questions> getQuestion3() {
     final List<Questions> question = <Questions>[];
     if (q2 == '1') {
-      question.add(const Questions(title: 'Services', id: '1'));
-      question.add(const Questions(title: 'you vs you', id: '2'));
-      question.add(const Questions(title: 'mpt', id: '3'));
+      question.add(const Questions(title: 'you vs you', id: '1'));
+      question.add(const Questions(title: 'mpt', id: '2'));
     } else if (q2 == '2') {
-      question.add(const Questions(title: 'transform packages', id: '1'));
-      question.add(const Questions(title: 'Just results', id: '2'));
-      question.add(const Questions(title: 'starter pack', id: '3'));
-      question.add(const Questions(title: 'Physique + Technique', id: '4'));
-      question.add(const Questions(title: 'F2F', id: '5'));
+      question.add(const Questions(title: 'Just results', id: '1'));
+      question.add(const Questions(title: 'starter pack', id: '2'));
+      question.add(const Questions(title: 'Physique + Technique', id: '3'));
+      question.add(const Questions(title: 'F2F', id: '4'));
     } else {
-      question.add(const Questions(title: 'gym accelerator', id: '1'));
-      question.add(const Questions(title: 'bodycheck', id: '2'));
-      question.add(const Questions(title: 'more nutrition', id: '3'));
+      question.add(const Questions(title: 'bodycheck', id: '1'));
+      question.add(const Questions(title: 'more nutrition', id: '2'));
     }
     return question;
   }
 
   List<Questions> getQuestion4() {
     final List<Questions> question = <Questions>[];
-    if (q3 == '1') {
-      question.add(const Questions(title: 'you vs you', id: '1'));
+    if (q2 == '1' && q3 == '1') {
       question
-          .add(const Questions(title: 'you vs you exercise plans', id: '2'));
-    } else if (q3 == '2') {
-      question.add(const Questions(title: 'mpt', id: '1'));
-      question.add(const Questions(title: 'mpt class above', id: '2'));
-      question.add(const Questions(title: 'mpt F2F sessions', id: '3'));
-    } else if (q3 == '3') {
-      question.add(const Questions(title: 'Just results', id: '1'));
-      question.add(const Questions(title: 'Just results 6 weeks', id: '2'));
-    } else if (q3 == '4') {
-      question.add(const Questions(title: 'starter pack', id: '1'));
-      question.add(const Questions(title: 'starter pack 2 weeks', id: '2'));
-    } else if (q3 == '5') {
-      question.add(const Questions(title: 'Physique + Technique', id: '1'));
+          .add(const Questions(title: 'you vs you exercise plans', id: '1'));
+    } else if (q2 == '1' && q3 == '2') {
+      question.add(const Questions(title: 'mpt class above', id: '1'));
+      question.add(const Questions(title: 'mpt F2F sessions', id: '2'));
+    } else if (q2 == '2' && q3 == '1') {
+      question.add(const Questions(title: 'Just results 6 weeks', id: '1'));
+    } else if (q2 == '2' && q3 == '2') {
+      question.add(const Questions(title: 'starter pack 2 weeks', id: '1'));
+    } else if (q2 == '2' && q3 == '3') {
       question
-          .add(const Questions(title: 'Physique + Technique 4 weeks', id: '2'));
-    } else if (q3 == '6') {
-      question.add(const Questions(title: 'F2F', id: '1'));
-      question.add(const Questions(title: 'F2F 8 weeks', id: '2'));
-    } else if (q3 == '7') {
-      question.add(const Questions(title: 'bodycheck', id: '1'));
-      question.add(const Questions(title: 'bodycheck coaching', id: '2'));
+          .add(const Questions(title: 'Physique + Technique 4 weeks', id: '1'));
+    } else if (q2 == '2' && q3 == '4') {
+      question.add(const Questions(title: 'F2F 8 weeks', id: '1'));
+    } else if (q2 == '3' && q3 == '1') {
+      question.add(const Questions(title: 'bodycheck coaching', id: '1'));
       question
-          .add(const Questions(title: 'bodycheck online calculators', id: '3'));
+          .add(const Questions(title: 'bodycheck online calculators', id: '2'));
     } else {
-      question.add(const Questions(title: 'more nutrition', id: '1'));
-      question.add(const Questions(title: 'more nutrition coaching', id: '2'));
+      question.add(const Questions(title: 'more nutrition coaching', id: '1'));
       question.add(
-          const Questions(title: 'more nutrition online calculators', id: '3'));
+          const Questions(title: 'more nutrition online calculators', id: '2'));
     }
     return question;
   }
@@ -114,32 +103,36 @@ class QuestionsProvider extends ChangeNotifier {
       question.add(const Questions(title: 'Build muscle', id: '3'));
       question.add(const Questions(title: 'Tone up', id: '4'));
     } else if (q4 == '5') {
-     question.add(const Questions(title: 'starter pack 2 weeks', id: '1'));
+      question.add(const Questions(title: 'starter pack 2 weeks', id: '1'));
       question.add(const Questions(title: 'Better looking body', id: '2'));
       question.add(const Questions(title: 'Health and fitness', id: '3'));
       question.add(const Questions(title: 'Improve performance', id: '4'));
     } else if (q4 == '6') {
-      question.add(const Questions(title: 'Physique + Technique 4 weeks', id: '1'));
+      question
+          .add(const Questions(title: 'Physique + Technique 4 weeks', id: '1'));
       question.add(const Questions(title: 'Bodyweight exercises', id: '2'));
-      question.add(const Questions(title: 'Barbell/dumbbell technique', id: '3'));
-      question.add(const Questions(title: 'Posture for machine workouts', id: '4'));
+      question
+          .add(const Questions(title: 'Barbell/dumbbell technique', id: '3'));
+      question
+          .add(const Questions(title: 'Posture for machine workouts', id: '4'));
     } else if (q4 == '7') {
       question.add(const Questions(title: 'F2F 8 weeks', id: '1'));
       question.add(const Questions(title: 'Aches', id: '2'));
       question.add(const Questions(title: 'Pains', id: '3'));
       question.add(const Questions(title: 'Stiffness/tightness', id: '4'));
-    }else if (q4 == '8') {
+    } else if (q4 == '8') {
       question.add(const Questions(title: 'bodycheck coaching', id: '1'));
       question.add(const Questions(title: 'body composition', id: '2'));
       question.add(const Questions(title: 'stamina & endurance', id: '3'));
       question.add(const Questions(title: 'strength & stability', id: '4'));
-    }else if (q4 == '9') {
+    } else if (q4 == '9') {
       question.add(const Questions(title: 'more nutrition coaching', id: '1'));
       question.add(const Questions(title: 'Meal advice', id: '2'));
       question.add(const Questions(title: 'Calorie coach', id: '3'));
       question.add(const Questions(title: 'Virtual food swap', id: '4'));
     } else {
-      question.add(const Questions(title: 'more nutrition online calculators', id: '1'));
+      question.add(
+          const Questions(title: 'more nutrition online calculators', id: '1'));
       question.add(const Questions(title: 'macros/micro check', id: '2'));
       question.add(const Questions(title: 'calorie check', id: '3'));
       question.add(const Questions(title: 'weight loss predictor', id: '4'));
@@ -173,30 +166,31 @@ class QuestionsProvider extends ChangeNotifier {
 
   String getQuestion4Title() {
     String title;
-    if (q1 == '1' && q2 == '1' && q3 == '2') {
+    if (q2 == '1' && q3 == '2') {
       title = 'Please choose your you vs you Service';
-    } else if (q1 == '1' && q2 == '1' && q3 == '3') {
+    } else if (q2 == '1' && q3 == '3') {
       title = 'Please choose your mpt Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '2') {
+    } else if (q2 == '2' && q3 == '2') {
       title = 'Please choose your Just results Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '3') {
+    } else if (q2 == '2' && q3 == '3') {
       title = 'Please choose your starter pack Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '4') {
+    } else if (q2 == '2' && q3 == '4') {
       title = 'Please choose your Physique + Technique Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '5') {
+    } else if (q2 == '2' && q3 == '5') {
       title = 'Please choose your F2F Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '2' && q3 == '6') {
       title = 'Please choose your bodycheck Service';
     } else {
       title = 'Please choose your more nutrition Service';
     }
     return title;
   }
+
   String getQuestion5Title() {
     String title;
-    if (q1 == '1' && q2 == '1' && q3 == '2') {
+    if (q1 == '1' && q2 == '1' && q3 == '2' && q4 == '1') {
       title = 'Please choose your you vs you Service';
-    } else if (q1 == '1' && q2 == '1' && q3 == '3') {
+    } else if (q1 == '1' && q2 == '1' && q3 == '3' && q4 == '2') {
       title = 'Please choose your mpt class above Service';
     } else if (q1 == '1' && q2 == '2' && q3 == '2') {
       title = 'Please choose your mpt F2F Service';
@@ -210,7 +204,7 @@ class QuestionsProvider extends ChangeNotifier {
       title = 'Please choose your F2F Service';
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
       title = 'Please choose your bodycheck Service';
-    }  else {
+    } else {
       title = 'Please choose your more nutrition Service';
     }
     return title;
@@ -219,32 +213,45 @@ class QuestionsProvider extends ChangeNotifier {
   String getQuestion6Title() {
     String title;
     if (q1 == '1' && q2 == '1' && q3 == '2') {
-      title = "Great you've chosen the quick workout option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the quick workout option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '1' && q3 == '3') {
-      title = "Great you've chosen the designer workout option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the designer workout option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '2') {
-      title = "Great you've chosen the personal add-ons option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the personal add-ons option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '3') {
-      title = "Great you've chosen the calorie burners option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the calorie burners option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '4') {
-      title = "Great you've chosen the muscle toners option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the muscle toners option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '5') {
-      title = "Great you've chosen the circuits and bootcamps option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the circuits and bootcamps option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '7') {
-      title = "Great you've chosen the Personal training option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Personal training option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Gym therapy & rehab option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Gym therapy & rehab option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Performance & technique option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Performance & technique option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Lose weight option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Lose weight option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Build muscle option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Build muscle option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
+      title =
+          "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
     } else if (q1 == '1' && q2 == '2' && q3 == '6') {
-      title = "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
-    }  else {
+      title =
+          "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
+    } else {
       title = 'Please choose your more nutrition Service';
     }
     return title;

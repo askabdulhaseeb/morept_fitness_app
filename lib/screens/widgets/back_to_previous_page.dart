@@ -9,7 +9,7 @@ class BackToPreviousPageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 10, bottom: 10, left: 12, right: 6),
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.only(top: 20, bottom: 8),
       decoration: BoxDecoration(
         color: Colors.black12,
         borderRadius: BorderRadius.circular(10),

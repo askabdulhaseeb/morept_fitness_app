@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:morept_fitness_app/screens/widgets/back_to_previous_page.dart';
+import 'package:morept_fitness_app/screens/widgets/custom_progress_line.dart';
 
 class MultiStep7 extends StatelessWidget {
   const MultiStep7({Key? key}) : super(key: key);
@@ -14,6 +15,7 @@ class MultiStep7 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const BackToPreviousPageWidget(),
+            const CustomProgressLine(pageNumber: 7, totalPages: 7),
           ],
         ),
       ),
