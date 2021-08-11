@@ -79,63 +79,54 @@ class QuestionsProvider extends ChangeNotifier {
 
   List<Questions> getQuestion5() {
     final List<Questions> question = <Questions>[];
-    if (q4 == '1') {
+    if (q2 == '1' && q3 == '1' && q4 == '1') {
       question
-          .add(const Questions(title: 'you vs you exercise plans', id: '1'));
-      question
-          .add(const Questions(title: 'I just want a quick workout', id: '2'));
-      question.add(const Questions(title: 'Design my workout for me', id: '3'));
+          .add(const Questions(title: 'I just want a quick workout', id: '1'));
+      question.add(const Questions(title: 'Design my workout for me', id: '2'));
       question.add(const Questions(
-          title: 'Let me pick and choose my own add-ons', id: '4'));
-    } else if (q4 == '2') {
-      question.add(const Questions(title: 'mpt class above', id: '1'));
-      question.add(const Questions(title: 'calorie burners', id: '2'));
-      question.add(const Questions(title: 'muscle toners', id: '3'));
-      question.add(const Questions(title: 'circuits and bootcamps', id: '4'));
-    } else if (q4 == '3') {
-      question.add(const Questions(title: 'mpt F2F sessions', id: '1'));
-      question.add(const Questions(title: 'Personal training', id: '2'));
-      question.add(const Questions(title: 'Gym therapy & rehab', id: '3'));
-      question.add(const Questions(title: 'Performance & technique', id: '4'));
-    } else if (q4 == '4') {
-      question.add(const Questions(title: 'Just results 6 weeks', id: '1'));
-      question.add(const Questions(title: 'Lose weight', id: '2'));
-      question.add(const Questions(title: 'Build muscle', id: '3'));
-      question.add(const Questions(title: 'Tone up', id: '4'));
-    } else if (q4 == '5') {
-      question.add(const Questions(title: 'starter pack 2 weeks', id: '1'));
-      question.add(const Questions(title: 'Better looking body', id: '2'));
-      question.add(const Questions(title: 'Health and fitness', id: '3'));
-      question.add(const Questions(title: 'Improve performance', id: '4'));
-    } else if (q4 == '6') {
+          title: 'Let me pick and choose my own add-ons', id: '3'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '1') {
+      question.add(const Questions(title: 'calorie burners', id: '1'));
+      question.add(const Questions(title: 'muscle toners', id: '2'));
+      question.add(const Questions(title: 'circuits and bootcamps', id: '3'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '2') {
+      question.add(const Questions(title: 'Personal training', id: '1'));
+      question.add(const Questions(title: 'Gym therapy & rehab', id: '2'));
+      question.add(const Questions(title: 'Performance & technique', id: '3'));
+    } else if (q2 == '2' && q3 == '1' && q4 == '1') {
+      question.add(const Questions(title: 'Lose weight', id: '1'));
+      question.add(const Questions(title: 'Build muscle', id: '2'));
+      question.add(const Questions(title: 'Tone up', id: '3'));
+    } else if (q2 == '2' && q3 == '2' && q4 == '1') {
+      question.add(const Questions(title: 'Better looking body', id: '1'));
+      question.add(const Questions(title: 'Health and fitness', id: '2'));
+      question.add(const Questions(title: 'Improve performance', id: '3'));
+    } else if (q2 == '2' && q3 == '3' && q4 == '1') {
+      question.add(const Questions(title: 'Bodyweight exercises', id: '1'));
       question
-          .add(const Questions(title: 'Physique + Technique 4 weeks', id: '1'));
-      question.add(const Questions(title: 'Bodyweight exercises', id: '2'));
+          .add(const Questions(title: 'Barbell/dumbbell technique', id: '2'));
       question
-          .add(const Questions(title: 'Barbell/dumbbell technique', id: '3'));
-      question
-          .add(const Questions(title: 'Posture for machine workouts', id: '4'));
-    } else if (q4 == '7') {
-      question.add(const Questions(title: 'F2F 8 weeks', id: '1'));
-      question.add(const Questions(title: 'Aches', id: '2'));
-      question.add(const Questions(title: 'Pains', id: '3'));
-      question.add(const Questions(title: 'Stiffness/tightness', id: '4'));
-    } else if (q4 == '8') {
-      question.add(const Questions(title: 'bodycheck coaching', id: '1'));
-      question.add(const Questions(title: 'body composition', id: '2'));
-      question.add(const Questions(title: 'stamina & endurance', id: '3'));
-      question.add(const Questions(title: 'strength & stability', id: '4'));
-    } else if (q4 == '9') {
-      question.add(const Questions(title: 'more nutrition coaching', id: '1'));
-      question.add(const Questions(title: 'Meal advice', id: '2'));
-      question.add(const Questions(title: 'Calorie coach', id: '3'));
-      question.add(const Questions(title: 'Virtual food swap', id: '4'));
+          .add(const Questions(title: 'Posture for machine workouts', id: '3'));
+    } else if (q2 == '2' && q3 == '4' && q4 == '1') {
+      question.add(const Questions(title: 'Aches', id: '1'));
+      question.add(const Questions(title: 'Pains', id: '2'));
+      question.add(const Questions(title: 'Stiffness/tightness', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '1') {
+      question.add(const Questions(title: 'body composition', id: '1'));
+      question.add(const Questions(title: 'stamina & endurance', id: '2'));
+      question.add(const Questions(title: 'strength & stability', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '2') {
+      question.add(const Questions(title: 'body composition', id: '1'));
+      question.add(const Questions(title: 'lifting ability', id: '2'));
+      question.add(const Questions(title: 'injury predictor', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '1') {
+      question.add(const Questions(title: 'Meal advice', id: '1'));
+      question.add(const Questions(title: 'Calorie coach', id: '2'));
+      question.add(const Questions(title: 'Virtual food swap', id: '3'));
     } else {
-      question.add(
-          const Questions(title: 'more nutrition online calculators', id: '1'));
-      question.add(const Questions(title: 'macros/micro check', id: '2'));
-      question.add(const Questions(title: 'calorie check', id: '3'));
-      question.add(const Questions(title: 'weight loss predictor', id: '4'));
+      question.add(const Questions(title: 'macros/micro check', id: '1'));
+      question.add(const Questions(title: 'calorie check', id: '2'));
+      question.add(const Questions(title: 'weight loss predictor', id: '3'));
     }
     return question;
   }
@@ -188,71 +179,133 @@ class QuestionsProvider extends ChangeNotifier {
 
   String getQuestion5Title() {
     String title;
-    if (q1 == '1' && q2 == '1' && q3 == '2' && q4 == '1') {
+    if (q2 == '1' && q3 == '1' && q4 == '1') {
       title = 'Please choose your you vs you Service';
-    } else if (q1 == '1' && q2 == '1' && q3 == '3' && q4 == '2') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '1') {
       title = 'Please choose your mpt class above Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '2') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '2') {
       title = 'Please choose your mpt F2F Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '3') {
+    } else if (q2 == '2' && q3 == '1' && q4 == '1') {
       title = 'Please choose your Just Results Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '4') {
+    } else if (q2 == '2' && q3 == '2' && q4 == '1') {
       title = 'Please choose your starter pack Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '5') {
+    } else if (q2 == '2' && q3 == '3' && q4 == '1') {
       title = 'Please choose your Physique + Technique Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '7') {
+    } else if (q2 == '2' && q3 == '4' && q4 == '1') {
       title = 'Please choose your F2F Service';
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '3' && q3 == '1' && q4 == '1') {
       title = 'Please choose your bodycheck Service';
-    } else {
+    } else if (q2 == '3' && q3 == '1' && q4 == '2') {
+      title = 'Please choose your bodycheck online Service';
+    } else if (q2 == '3' && q3 == '2' && q4 == '1') {
       title = 'Please choose your more nutrition Service';
+    } else {
+      title = 'Please choose your more nutrition online Service';
     }
     return title;
   }
 
   String getQuestion6Title() {
     String title;
-    if (q1 == '1' && q2 == '1' && q3 == '2') {
+    if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '1') {
       title =
           "Great you've chosen the quick workout option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '1' && q3 == '3') {
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '2') {
       title =
           "Great you've chosen the designer workout option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '2') {
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3') {
       title =
           "Great you've chosen the personal add-ons option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '3') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '1') {
       title =
           "Great you've chosen the calorie burners option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '4') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '2') {
       title =
           "Great you've chosen the muscle toners option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '5') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '3') {
       title =
           "Great you've chosen the circuits and bootcamps option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '7') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '1') {
       title =
           "Great you've chosen the Personal training option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '2') {
       title =
           "Great you've chosen the Gym therapy & rehab option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '3') {
       title =
           "Great you've chosen the Performance & technique option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '1') {
       title =
           "Great you've chosen the Lose weight option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '2') {
       title =
           "Great you've chosen the Build muscle option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '3') {
       title =
           "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
-    } else if (q1 == '1' && q2 == '2' && q3 == '6') {
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '1') {
       title =
-          "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
+          "Great you've chosen the Better looking body option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Health and fitness option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Improve performance option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Bodyweight exercises option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Barbell/dumbbell technique option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Posture for machine workouts option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Aches option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Pains option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Stiffness/tightness option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the body composition option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the stamina & endurance option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the strength & stability option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '1') {
+      title =
+          "Great you've chosen the body composition option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '2') {
+      title =
+          "Great you've chosen the lifting ability option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '3') {
+      title =
+          "Great you've chosen the injury predictor option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Meal advice option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Calorie coach option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Virtual food swap option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '2' && q5 == '1') {
+      title =
+          "Great you've chosen the macros/micro check option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the calorie check option, tell us want you prefer and we will get your product ready for you";
     } else {
-      title = 'Please choose your more nutrition Service';
+      title =
+          "Great you've chosen the weight loss predictor option, tell us want you prefer and we will get your product ready for you";
     }
     return title;
   }

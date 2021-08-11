@@ -24,8 +24,8 @@ class MultiStep6 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const BackToPreviousPageWidget(),
-             const CustomProgressLine(pageNumber: 6, totalPages: 7),
-            HeaderTextForQuestions(title: provider.getQuestion5Title()),
+            const CustomProgressLine(pageNumber: 6, totalPages: 7),
+            HeaderTextForQuestions(title: provider.getQuestion6Title()),
             LightBlackBackgroundContainer(
               child: Column(
                 children: <Widget>[
