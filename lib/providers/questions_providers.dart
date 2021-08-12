@@ -131,6 +131,187 @@ class QuestionsProvider extends ChangeNotifier {
     return question;
   }
 
+  List<Questions> getQuestion6() {
+    final List<Questions> question = <Questions>[];
+    if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'Get stronger', id: '1'));
+      question.add(const Questions(title: 'Build muscle', id: '2'));
+      question.add(const Questions(title: 'Tone up', id: '3'));
+      question.add(const Questions(title: 'Lose weight', id: '4'));
+      question
+          .add(const Questions(title: 'Improve sport performance', id: '5'));
+      question.add(const Questions(title: 'Recover from injury', id: '6'));
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(
+          title: 'Circuits which involve heavier weights with longer rests',
+          id: '1'));
+      question.add(const Questions(
+          title:
+              'Circuits which use functional equipment if you have access to it',
+          id: '2'));
+      question.add(const Questions(
+          title: 'Circuits that are lighter but allow a lot less time to rest',
+          id: '3'));
+      question
+          .add(const Questions(title: 'Heavier weights, lower reps', id: '4'));
+      question.add(
+          const Questions(title: 'A lot more reps, lighter reps', id: '5'));
+      question.add(const Questions(
+          title: 'Slow and steady continuously for 30mins mininum', id: '6'));
+      question.add(const Questions(
+          title: 'Fast pace with rests for only 15-20 mins', id: '7'));
+      question.add(const Questions(
+          title: 'All out sprint with long rests for 10-12mins', id: '8'));
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'style my workout', id: '1'));
+      question.add(const Questions(title: 'nutricoach', id: '2'));
+      question.add(const Questions(title: 'foodswap', id: '3'));
+      question.add(const Questions(title: 'fit adapt', id: '4'));
+      question.add(const Questions(title: 'weekly split ', id: '5'));
+      question.add(const Questions(title: 'equipment select', id: '6'));
+      question.add(const Questions(title: 'workout time', id: '7'));
+      question.add(const Questions(title: 'bodycheck', id: '8'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'step', id: '1'));
+      question.add(const Questions(title: 'Spin/cycle ', id: '2'));
+      question.add(const Questions(title: 'Burn it/Fat burn', id: '3'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'Pump', id: '1'));
+      question.add(const Questions(title: 'Abs ', id: '2'));
+      question.add(const Questions(title: 'Legs, bums and tums', id: '3'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'Circuits', id: '1'));
+      question.add(const Questions(title: 'Bootcamp', id: '2'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '1') {
+      question.add(const Questions(title: 'single session', id: '1'));
+      question.add(const Questions(title: 'me and my buddy', id: '2'));
+      question.add(const Questions(title: 'me and my buddies', id: '3'));
+      question.add(const Questions(title: 'outdoor session', id: '4'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '2') {
+      question.add(const Questions(title: 'massage ', id: '1'));
+      question.add(const Questions(title: 'physiotherapy', id: '2'));
+      question.add(const Questions(title: 'stretch and manipulate', id: '3'));
+      question.add(const Questions(title: 'sport + postural taping', id: '4'));
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '3') {
+      question
+          .add(const Questions(title: 'postural correction session', id: '1'));
+      question.add(const Questions(title: 'online posture check', id: '2'));
+      question.add(const Questions(title: 'sports specific session', id: '3'));
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'online sessions', id: '1'));
+      question.add(const Questions(title: 'in-gym groups', id: '2'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '3'));
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'online sessions', id: '1'));
+      question.add(const Questions(title: 'in-gym groups', id: '2'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '3'));
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'Tone up', id: '1'));
+      question.add(const Questions(title: 'online sessions', id: '2'));
+      question.add(const Questions(title: 'in-gym groups', id: '3'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '4'));
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'Tone up', id: '1'));
+      question.add(const Questions(title: 'online sessions', id: '2'));
+      question.add(const Questions(title: 'in-gym groups', id: '3'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '4'));
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'Tone up', id: '1'));
+      question.add(const Questions(title: 'online sessions', id: '2'));
+      question.add(const Questions(title: 'in-gym groups', id: '3'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '4'));
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'Tone up', id: '1'));
+      question.add(const Questions(title: 'online sessions', id: '2'));
+      question.add(const Questions(title: 'in-gym groups', id: '3'));
+      question.add(const Questions(title: 'cheat sheet booklet', id: '4'));
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'my pullup journey', id: '1'));
+      question.add(const Questions(title: 'Coaching sessions', id: '2'));
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'my deadlift journey', id: '1'));
+      question
+          .add(const Questions(title: 'my shoulder press journey', id: '2'));
+      question.add(const Questions(title: 'my squat journey', id: '3'));
+      question.add(const Questions(title: 'Coaching sessions', id: '4'));
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'my push pull journey', id: '1'));
+      question.add(const Questions(title: 'Coaching sessions', id: '2'));
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'treatment', id: '2'));
+      question.add(const Questions(title: 'assessment & treatment', id: '3'));
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'treatment', id: '2'));
+      question.add(const Questions(title: 'assessment & treatment', id: '3'));
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'treatment', id: '2'));
+      question.add(const Questions(title: 'assessment & treatment', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '1') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '2') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '3') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & plan', id: '2'));
+      question
+          .add(const Questions(title: 'assessment, plan & guidance', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '1') {
+      question.add(const Questions(title: 'info pack', id: '1'));
+      question.add(const Questions(title: 'assessment & meal advice', id: '2'));
+      question.add(const Questions(
+          title: 'assessment, meal advice & online consultation', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'assessment', id: '1'));
+      question.add(const Questions(title: 'assessment & meal advice', id: '2'));
+      question.add(const Questions(
+          title: 'assessment, meal advice & online consultation', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '3') {
+      question.add(const Questions(title: 'basic swap', id: '1'));
+      question.add(const Questions(title: 'swap with advice', id: '2'));
+      question
+          .add(const Questions(title: 'swap, advice & consultation', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '2' && q5 == '1') {
+      question.add(const Questions(title: 'macro check', id: '1'));
+      question.add(const Questions(title: 'micro check', id: '2'));
+      question.add(const Questions(title: 'macro & micro check', id: '3'));
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      question.add(const Questions(title: 'I can weigh my foods', id: '1'));
+      question.add(const Questions(
+          title: '''I don't mind estimated weights''', id: '2'));
+      question.add(const Questions(
+          title: 'I already have online calculator stats', id: '3'));
+    } else {
+      question.add(const Questions(title: 'weight loss predictor', id: '1'));
+      question.add(
+          const Questions(title: 'predict my monthly weight loss', id: '2'));
+    }
+    return question;
+  }
+
   String getQuestion2Title() {
     String title;
     if (q1 == '1') {
@@ -206,6 +387,111 @@ class QuestionsProvider extends ChangeNotifier {
   }
 
   String getQuestion6Title() {
+    String title;
+    if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the quick workout option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the designer workout option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the personal add-ons option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the calorie burners option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the muscle toners option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the circuits and bootcamps option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '1') {
+      title =
+          "Great you've chosen the Personal training option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '2') {
+      title =
+          "Great you've chosen the Gym therapy & rehab option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '1' && q3 == '2' && q4 == '2' && q5 == '3') {
+      title =
+          "Great you've chosen the Performance & technique option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Lose weight option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Build muscle option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '1' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Tone up option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Better looking body option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Health and fitness option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '2' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Improve performance option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Bodyweight exercises option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Barbell/dumbbell technique option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '3' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Posture for machine workouts option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Aches option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Pains option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '2' && q3 == '4' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Stiffness/tightness option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the body composition option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the stamina & endurance option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the strength & stability option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '1') {
+      title =
+          "Great you've chosen the body composition option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '2') {
+      title =
+          "Great you've chosen the lifting ability option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '1' && q4 == '2' && q5 == '3') {
+      title =
+          "Great you've chosen the injury predictor option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '1') {
+      title =
+          "Great you've chosen the Meal advice option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the Calorie coach option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '3') {
+      title =
+          "Great you've chosen the Virtual food swap option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '2' && q5 == '1') {
+      title =
+          "Great you've chosen the macros/micro check option, tell us want you prefer and we will get your product ready for you";
+    } else if (q2 == '3' && q3 == '2' && q4 == '1' && q5 == '2') {
+      title =
+          "Great you've chosen the calorie check option, tell us want you prefer and we will get your product ready for you";
+    } else {
+      title =
+          "Great you've chosen the weight loss predictor option, tell us want you prefer and we will get your product ready for you";
+    }
+    return title;
+  }
+
+  String getQuestion7Title() {
     String title;
     if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '1') {
       title =

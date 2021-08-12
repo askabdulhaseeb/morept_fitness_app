@@ -16,7 +16,7 @@ class MultiStep6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final QuestionsProvider provider = Provider.of<QuestionsProvider>(context);
-    final List<Questions> question = provider.getQuestion5();
+    final List<Questions> question = provider.getQuestion6();
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(16),
