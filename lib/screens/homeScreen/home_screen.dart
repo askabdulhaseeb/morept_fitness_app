@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:morept_fitness_app/screens/selectable_navigation_screen/selectable_navigation_screen.dart';
 import 'homeScreenWidgets/add_text_with_bg.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -52,7 +53,10 @@ class _CurryFormScreenState extends State<HomeScreen> {
             right: 16,
             child: GestureDetector(
               onTap: () {
-                // TODO: Let's start on press
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                  SelectableNavigationScreen.routeName,
+                  (Route<dynamic> route) => false,
+                );
               },
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),

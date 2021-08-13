@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:morept_fitness_app/screens/selectable_navigation_screen/selectable_navigation_screen.dart';
 import 'package:provider/provider.dart';
 import 'providers/questions_providers.dart';
 import 'screens/auth/loginScreen/login_screen.dart';
@@ -42,6 +43,9 @@ class MyApp extends StatelessWidget {
           LoginScreen.routeName: (_) => const LoginScreen(),
           SignupScreen.routeName: (_) => const SignupScreen(),
           HomeScreen.routeName: (_) => const HomeScreen(),
+          // selectable botton pages
+          SelectableNavigationScreen.routeName: (_) =>
+              SelectableNavigationScreen(),
           // Questions
           MultiStep1.routeName: (_) => const MultiStep1(),
           MultiStep2.routeName: (_) => const MultiStep2(),
