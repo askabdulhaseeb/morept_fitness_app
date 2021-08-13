@@ -18,6 +18,7 @@ dependencies:
   provider: ^5.0.0
 
   cupertino_icons: ^1.0.2
+  video_player: ^2.1.12
 
 dev_dependencies:
   flutter_test:
