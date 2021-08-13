@@ -51,23 +51,29 @@ class _CurryFormScreenState extends State<HomeScreen> {
             bottom: 16,
             left: 16,
             right: 16,
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-              padding: const EdgeInsets.all(16),
-              height: 60,
-              width: double.infinity,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.black,
-              ),
-              child: const Text(
-                '''Let's Start''',
-                style: TextStyle(
+            child: GestureDetector(
+              onTap: () {
+                // TODO: Let's start on press
+              },
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.all(16),
+                height: 60,
+                width: double.infinity,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.black,
+                ),
+                child: const Text(
+                  '''Let's Start''',
+                  style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: 1),
+                    letterSpacing: 1,
+                  ),
+                ),
               ),
             ),
           ),

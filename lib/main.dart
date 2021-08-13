@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
       // ignore: always_specify_types
       providers: [
         ChangeNotifierProvider<QuestionsProvider>.value(
-            value: QuestionsProvider()),
+          value: QuestionsProvider(),
+        ),
       ],
       child: MaterialApp(
         title: 'More PT Fitness', // web link: https://morept.world/

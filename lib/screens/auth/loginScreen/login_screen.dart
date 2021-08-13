@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:morept_fitness_app/screens/homeScreen/home_screen.dart';
+import 'package:morept_fitness_app/screens/widgets/copyrights.dart';
 import 'package:morept_fitness_app/screens/widgets/custom_inkwell_button.dart';
 import '../../../config/app_images.dart';
 import '../signupScreen/signup_screen.dart';
@@ -36,11 +37,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ValideEmailTextFormField(email: _email),
               ValidePasswordTextFormField(password: _password),
               const SizedBox(height: 20),
-              // LoginButton(
-              //   email: _email,
-              //   password: _password,
-              //   globalKey: _globalKey,
-              // ),
               CustomInkWellButton(
                 onTap: () {
                   Navigator.of(context).pushNamedAndRemoveUntil(
@@ -52,6 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const Spacer(),
               const GoToSignupScreenLine(),
+              Copyrights(),
             ],
           ),
         ),
@@ -122,10 +119,11 @@ class GoToSignupScreenLine extends StatelessWidget {
           ),
         ),
         TextButton(
-            onPressed: () {
-              Navigator.of(context).pushNamed(SignupScreen.routeName);
-            },
-            child: const Text('Sign Up'))
+          onPressed: () {
+            Navigator.of(context).pushNamed(SignupScreen.routeName);
+          },
+          child: const Text('Sign Up'),
+        )
       ],
     );
   }
