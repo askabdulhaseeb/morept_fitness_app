@@ -17,53 +17,6 @@ class CustomProgressLine extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  const Text('q1'),
-                  Text(provider.q1),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q2'),
-                  Text(provider.q2),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q3'),
-                  Text(provider.q3),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q4'),
-                  Text(provider.q4),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q5'),
-                  Text(provider.q5),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q6'),
-                  Text(provider.q6),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const Text('q7'),
-                  Text(provider.q7),
-                ],
-              ),
-            ],
-          ),
           Stack(
             children: <Widget>[
               Container(

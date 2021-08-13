@@ -23,9 +23,13 @@ class CustomRadioButton extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () => onChange(value),
-          child: Text(
-            title,
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width * 0.6,
+            child: Text(
+              title,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+            ),
           ),
         ),
       ],
