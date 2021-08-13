@@ -49,6 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const Spacer(),
               const GoToSignupScreenLine(),
               Copyrights(),
+              const SizedBox(height: 10),
             ],
           ),
         ),
