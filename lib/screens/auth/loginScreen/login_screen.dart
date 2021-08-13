@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/screens/homeScreen/home_screen.dart';
-import 'package:morept_fitness_app/screens/widgets/copyrights.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_inkwell_button.dart';
 import '../../../config/app_images.dart';
+import '../../homeScreen/home_screen.dart';
+import '../../widgets/copyrights.dart';
+import '../../widgets/custom_inkwell_button.dart';
 import '../signupScreen/signup_screen.dart';
 import '../widgets/valide_email_textformfield.dart';
 import '../widgets/valide_password_textformfield.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/providers/questions_providers.dart';
-import 'package:morept_fitness_app/screens/homeScreen/home_screen.dart';
-import 'package:morept_fitness_app/screens/widgets/back_to_previous_page.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_inkwell_button.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_progress_line.dart';
 import 'package:provider/provider.dart';
+import '../../../providers/questions_providers.dart';
+import '../../homeScreen/home_screen.dart';
+import '../../widgets/back_to_previous_page.dart';
+import '../../widgets/custom_inkwell_button.dart';
+import '../../widgets/custom_progress_line.dart';
 
 class MultiStep7 extends StatelessWidget {
   const MultiStep7({Key? key}) : super(key: key);

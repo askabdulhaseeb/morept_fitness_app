@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'homeScreenWidgets/add_text_with_bg.dart';
 
 class HomeScreen extends StatefulWidget {

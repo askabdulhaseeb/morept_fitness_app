@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/screens/auth/questionsScreens/multi_step_1.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_inkwell_button.dart';
 import '../../../config/app_images.dart';
+import '../../auth/questionsScreens/multi_step_1.dart';
+import '../../widgets/custom_inkwell_button.dart';
 import '../widgets/valide_email_textformfield.dart';
 import '../widgets/valide_name_textformfield.dart';
 import '../widgets/valide_password_textformfield.dart';

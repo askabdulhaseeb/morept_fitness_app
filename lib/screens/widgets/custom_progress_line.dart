@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/models/questions.dart';
-import 'package:morept_fitness_app/providers/questions_providers.dart';
 import 'package:provider/provider.dart';
+import '../../../providers/questions_providers.dart';
 
 class CustomProgressLine extends StatelessWidget {
   const CustomProgressLine(

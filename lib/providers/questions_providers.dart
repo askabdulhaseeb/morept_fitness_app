@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/models/questions.dart';
+import '../../models/questions.dart';
 
 class QuestionsProvider extends ChangeNotifier {
   String q1 = '1', q2 = '1', q3 = '1', q4 = '1', q5 = '1', q6 = '1', q7 = '1';
@@ -830,21 +830,29 @@ class QuestionsProvider extends ChangeNotifier {
           '''"You've selected the 'All out sprint with long rests for 10-12mins ' option, complete the purchase and our team will have you all finished within 24hours"''';
       // done
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '1') {
-      title = '''"You've selected the 'style my workout' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'style my workout' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '2') {
-      title = '''"You've selected the 'nutricoach' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'nutricoach' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '3') {
-      title = '''"You've selected the 'foodswap' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'foodswap' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '4') {
-      title = '''"You've selected the 'fit adapt' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'fit adapt' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '5') {
-      title = '''"You've selected the 'weekly split ' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'weekly split ' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '6') {
-      title = '''"You've selected the 'equipment select' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'equipment select' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '7') {
-      title = '''"You've selected the 'workout time' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'workout time' option, complete the purchase and our team will have you all finished within 24hours"''';
     } else if (q2 == '1' && q3 == '1' && q4 == '1' && q5 == '3' && q6 == '8') {
-      title = '''"You've selected the 'bodycheck' option, complete the purchase and our team will have you all finished within 24hours"''';
+      title =
+          '''"You've selected the 'bodycheck' option, complete the purchase and our team will have you all finished within 24hours"''';
       // done
     } else if (q2 == '1' && q3 == '2' && q4 == '1' && q5 == '1' && q6 == '1') {
       title =

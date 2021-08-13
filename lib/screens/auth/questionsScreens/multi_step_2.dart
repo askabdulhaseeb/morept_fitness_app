@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:morept_fitness_app/models/questions.dart';
-import 'package:morept_fitness_app/providers/questions_providers.dart';
-import 'package:morept_fitness_app/screens/auth/questionsScreens/multi_step_3.dart';
-import 'package:morept_fitness_app/screens/widgets/back_to_previous_page.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_progress_line.dart';
-import 'package:morept_fitness_app/screens/widgets/custom_radio_button.dart';
-import 'package:morept_fitness_app/screens/widgets/header_text_for_questions.dart';
-import 'package:morept_fitness_app/screens/widgets/light_black_bg.dart';
 import 'package:provider/provider.dart';
+import '../../../models/questions.dart';
+import '../../../providers/questions_providers.dart';
+import '../../auth/questionsScreens/multi_step_3.dart';
+import '../../widgets/back_to_previous_page.dart';
+import '../../widgets/custom_progress_line.dart';
+import '../../widgets/custom_radio_button.dart';
+import '../../widgets/header_text_for_questions.dart';
+import '../../widgets/light_black_bg.dart';
 
 class MultiStep2 extends StatelessWidget {
   const MultiStep2({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class MultiStep2 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const BackToPreviousPageWidget(),
-             const CustomProgressLine(pageNumber: 2, totalPages: 7),
+            const CustomProgressLine(pageNumber: 2, totalPages: 7),
             HeaderTextForQuestions(title: provider.getQuestion2Title()),
             LightBlackBackgroundContainer(
               child: Column(

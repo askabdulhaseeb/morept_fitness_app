@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 Widget addTitleWithBackground(BuildContext context) {
   Widget _buildTextWidget(String text) {
     return Align(
