@@ -36,24 +36,26 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.blue,
           splashColor: Colors.blue[200],
         ),
-        home: const SplashScreen(),
+        // home: const SplashScreen(),
+        home:  SelectableNavigationScreen(),
+
         routes: <String, WidgetBuilder>{
-          SplashScreen.routeName: (_) => const SplashScreen(),
-          IntroSliderScreen.routeName: (_) => const IntroSliderScreen(),
-          LoginScreen.routeName: (_) => const LoginScreen(),
-          SignupScreen.routeName: (_) => const SignupScreen(),
-          HomeScreen.routeName: (_) => const HomeScreen(),
-          // selectable botton pages
-          SelectableNavigationScreen.routeName: (_) =>
-              SelectableNavigationScreen(),
-          // Questions
-          MultiStep1.routeName: (_) => const MultiStep1(),
-          MultiStep2.routeName: (_) => const MultiStep2(),
-          MultiStep3.routeName: (_) => const MultiStep3(),
-          MultiStep4.routeName: (_) => const MultiStep4(),
-          MultiStep5.routeName: (_) => const MultiStep5(),
-          MultiStep6.routeName: (_) => const MultiStep6(),
-          MultiStep7.routeName: (_) => const MultiStep7(),
+          // SplashScreen.routeName: (_) => const SplashScreen(),
+          // IntroSliderScreen.routeName: (_) => const IntroSliderScreen(),
+          // LoginScreen.routeName: (_) => const LoginScreen(),
+          // SignupScreen.routeName: (_) => const SignupScreen(),
+          // HomeScreen.routeName: (_) => const HomeScreen(),
+          // // selectable botton pages
+          // SelectableNavigationScreen.routeName: (_) =>
+          //     SelectableNavigationScreen(),
+          // // Questions
+          // MultiStep1.routeName: (_) => const MultiStep1(),
+          // MultiStep2.routeName: (_) => const MultiStep2(),
+          // MultiStep3.routeName: (_) => const MultiStep3(),
+          // MultiStep4.routeName: (_) => const MultiStep4(),
+          // MultiStep5.routeName: (_) => const MultiStep5(),
+          // MultiStep6.routeName: (_) => const MultiStep6(),
+          // MultiStep7.routeName: (_) => const MultiStep7(),
         },
       ),
     );
