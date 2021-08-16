@@ -7,7 +7,7 @@ Widget addTitleWithBackground(BuildContext context) {
       child: RichText(
         text: TextSpan(
           style: Theme.of(context).textTheme.bodyText2,
-          children: [
+          children: <InlineSpan>[
             const WidgetSpan(
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 4.0),
@@ -61,7 +61,7 @@ Widget addTitleWithBackground(BuildContext context) {
     );
   }
 
-  Widget horizontalList2 = Container(
+  final Widget horizontalList2 = Container(
       margin: const EdgeInsets.symmetric(vertical: 20.0),
       height: 200.0,
       child: ListView(

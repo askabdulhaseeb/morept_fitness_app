@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'tabs/routines.dart';
+
 class Workouts extends StatefulWidget {
   @override
   WorkOutState createState() => WorkOutState();
 }
 
 class WorkOutState extends State<Workouts> {
-  
   @override
   Widget build(BuildContext context) {
     Widget _buildTitleWidget(String text) {
@@ -28,40 +28,52 @@ class WorkOutState extends State<Workouts> {
 
     Widget _addImageWidget(
         String image, String title, String subtitle, int size) {
-      return Stack(children: <Widget>[
-        GestureDetector(
+      return Stack(
+        children: <Widget>[
+          GestureDetector(
             onTap: () {},
             child: Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                    height: MediaQuery.of(context).size.height * size / 10,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                            fit: BoxFit.cover, image: NetworkImage(image))),
-                    child: Center(
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                          Padding(
-                              padding:
-                                  const EdgeInsets.only(bottom: 10.0, left: 30),
-                              child: Text(title,
-                                  style: const TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 25))),
-                          Padding(
-                              padding:
-                                  const EdgeInsets.only(bottom: 30.0, left: 30),
-                              child: Text(subtitle,
-                                  style: const TextStyle(
-                                      color: Colors.white, fontSize: 15)))
-                        ]))))),
-      ]);
+              padding: const EdgeInsets.only(top: 20),
+              child: Container(
+                height: MediaQuery.of(context).size.height * size / 10,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                        fit: BoxFit.cover, image: NetworkImage(image))),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10.0, left: 30),
+                        child: Text(
+                          title,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 30.0, left: 30),
+                        child: Text(
+                          subtitle,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
     }
 
     Widget _addSmallImageWidget(
@@ -117,11 +129,11 @@ class WorkOutState extends State<Workouts> {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-             shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(20),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                ),
               ),
-            ),
               backgroundColor: Colors.black45,
               bottom: const TabBar(
                 unselectedLabelStyle: TextStyle(fontSize: 18),
@@ -133,7 +145,7 @@ class WorkOutState extends State<Workouts> {
                 ],
               ),
               title: Padding(
-                  padding: const EdgeInsets.only(top:10),
+                  padding: const EdgeInsets.only(top: 10),
                   child: Row(
                     children: <Widget>[
                       const Expanded(
@@ -151,12 +163,9 @@ class WorkOutState extends State<Workouts> {
                                   child: Icon(Icons.note_add_rounded))))
                     ],
                   ))),
-          body: const TabBarView(
-            
+          body: TabBarView(
             children: <Widget>[
-              // Routines()
-              // Container(child:)
-              Icon(Icons.directions_car),
+              Routines(),
               Icon(Icons.directions_transit),
               Icon(Icons.directions_bike),
             ],

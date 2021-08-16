@@ -26,7 +26,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
       unselectedItemColor: Theme.of(context).iconTheme.color,
       selectedItemColor: Theme.of(context).primaryColor,
       showUnselectedLabels: true,
-      onTap: (value) => _onItemTapped(value),
+      onTap: (int value) => _onItemTapped(value),
       currentIndex: _selectedIndex,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(

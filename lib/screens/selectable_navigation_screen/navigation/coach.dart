@@ -30,7 +30,7 @@ class CoachState extends State<Coach> {
         GestureDetector(
             onTap: () {},
             child: Padding(
-                padding: EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20),
                 child: Container(
                     height: MediaQuery.of(context).size.height * size / 10,
                     width: double.infinity,
@@ -55,7 +55,7 @@ class CoachState extends State<Coach> {
         GestureDetector(
             onTap: () {},
             child: Padding(
-                padding: EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20),
                 child: Container(
                     height: MediaQuery.of(context).size.height * size / 10,
                     width: MediaQuery.of(context).size.width * width / 10,
@@ -100,33 +100,30 @@ class CoachState extends State<Coach> {
           preferredSize: const Size.fromHeight(70.0), // here the desired height
 
           child: AppBar(
-            
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20),
               ),
             ),
             backgroundColor: Colors.black54,
-            flexibleSpace: Container(
-              child: Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: CircleAvatar(
-                      radius: 30,
-                      backgroundImage: NetworkImage(
-                        'https://brandslogos.com/wp-content/uploads/images/large/gs-racing-logo.png',
-                      ),
+            flexibleSpace: Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: <Widget>[
+                const Padding(
+                  padding: EdgeInsets.all(10),
+                  child: CircleAvatar(
+                    radius: 30,
+                    backgroundImage: NetworkImage(
+                      'https://brandslogos.com/wp-content/uploads/images/large/gs-racing-logo.png',
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Container(
             height: double.infinity,
             width: double.infinity,
@@ -143,7 +140,7 @@ class CoachState extends State<Coach> {
                 ),
                 // ),
                 Row(
-                  children: [
+                  children: <Widget>[
                     const Expanded(
                       child: Text(
                         "WEEK 1/5",
@@ -183,9 +180,9 @@ class CoachState extends State<Coach> {
                     'DAILY WORKOUT',
                     4),
                 Padding(
-                    padding: EdgeInsets.only(top: 10),
+                    padding: const EdgeInsets.only(top: 10),
                     child: Row(
-                      children: [
+                      children: <Widget>[
                         Expanded(child: _buildTitleWidget('WELLNESS MAGAZINE')),
                         FlatButton(
                             onPressed: () => {},
@@ -209,7 +206,7 @@ class CoachState extends State<Coach> {
                   8
                 ]),
                 Padding(
-                    padding: EdgeInsets.only(top: 10),
+                    padding: const EdgeInsets.only(top: 10),
                     child: _buildTitleWidget('SET UP A WORKOUT')),
 
                 _horizontalImage([
@@ -238,23 +235,27 @@ class CoachState extends State<Coach> {
                   ),
                 )),
                 ButtonTheme(
-                  height: 70,
-                child:Padding(
-                  padding: EdgeInsets.only(left: 70.0, right: 70.0,bottom: 50,top:20),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: Colors.black,
-                    child: Text("Send feedback", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: Colors.white,
-                    ),),
-                    onPressed: () {},
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(10.0),
-                    ),
-                  ),
-                ))
+                    height: 70,
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 70.0, right: 70.0, bottom: 50, top: 20),
+                      child: RaisedButton(
+                        textColor: Colors.white,
+                        color: Colors.black,
+                        child: Text(
+                          "Send feedback",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                            color: Colors.white,
+                          ),
+                        ),
+                        onPressed: () {},
+                        shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ))
               ],
             ),
           ),
